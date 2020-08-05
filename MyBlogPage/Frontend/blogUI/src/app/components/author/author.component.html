@@ -1,0 +1,24 @@
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">Email</th>
+            <th scope="col">biography</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let cour of authors">
+    
+          <tr>
+            <th>{{cour._id}}</th>
+            <td>{{cour.name}}</td>
+            <td>{{cour.surname}}</td>
+            <td>{{cour.email}}</td>
+            <td>{{cour.biography}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>
